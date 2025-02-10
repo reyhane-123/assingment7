@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title%}{%endblock%}</title>
+
+    </head>
+    <body>
+        {%block content%}
+        <div class="navbar" style="text-align:right; color:black">
+            <a href="{% url 'detail_list'%}">خانه</a>
+        </div>
+        <div style="text-align:center">
+            <h1>اموزشگاه ایلیا</h1>
+        </div>
+        
+  
+        {%endblock%}
+    </body>
+    </html>
+    <style>
+        .navbar{
+            background-color:blue;
+            padding:15px;
+            box-shadow:2px 4px 6px rgba(0,0,0,0.3);
+        }
+    </style>

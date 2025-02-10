@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{%block title%}اموزشگاه{%endblock%}
+
+{%block content%}
+    <div class="navbar" style="text-align:right">
+        <a href="{% url 'detail_list'%}">خانه</a>
+    </div>
+    <div style="text-align:center">
+        <h1>اموزشگاه ایلیا</h1>
+    </div>
+
+    {%for item in list%}
+        {{item.id}}
+        {{item.name}}
+
+    {%endfor%}
+
+{%endblock%}
